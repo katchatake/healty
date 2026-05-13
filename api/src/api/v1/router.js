@@ -7,6 +7,7 @@ const servicesRoutes = require('./modules/services/services.routes');
 const patientsRoutes = require('./modules/patients/patients.routes');
 const appointmentsRoutes = require('./modules/appointments/appointments.routes');
 const medicalRecordsRoutes = require('./modules/medical_records/medical_records.routes');
+const paymentsRoutes = require('./modules/payments/payments.routes');
 
 router.use('/auth', authRoutes);
 router.use('/users', usersRoutes);
@@ -15,5 +16,6 @@ router.use('/services', servicesRoutes);
 router.use('/patients', patientsRoutes);
 router.use('/appointments', appointmentsRoutes);
 router.use('/medical-records', medicalRecordsRoutes);
+router.use('/payments', paymentsRoutes);
 
 module.exports = router;
