@@ -258,7 +258,69 @@ Se sigue un patrón modular por versiones (`api/v1/modules`) bajo la estructura 
 
 ---
 
-### 5. Respuestas de Error
+### 5. Pacientes (Patients)
+
+#### Crear Paciente
+`POST /api/v1/patients`
+- **Roles:** `Admin`, `Root`, `Receptionist`, `Professional`
+- **Request Payload (Joi):**
+```json
+{
+  "user_id": 10,
+  "full_name": "María González",
+  "date_of_birth": "1990-05-14",
+  "gender": "Femenino",
+  "phone": "555-8765",
+  "emergency_contact": "Pedro González (555-0000)"
+}
+```
+
+#### Obtener Todos los Pacientes
+`GET /api/v1/patients`
+- **Response Payload:**
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "user_id": 10,
+      "full_name": "María González",
+      "date_of_birth": "1990-05-14",
+      "user": {
+        "id": 10,
+        "email": "maria@paciente.com",
+        "is_active": true
+      }
+    }
+  ]
+}
+```
+
+#### Obtener Paciente por ID
+`GET /api/v1/patients/:id`
+- **Params (Joi):** `id` (integer, requerido)
+
+#### Actualizar Paciente (Parcial)
+`PATCH /api/v1/patients/:id`
+- **Roles:** `Admin`, `Root`, `Receptionist`, `Professional`
+- **Params (Joi):** `id` (integer, requerido)
+- **Request Payload (Joi - Opcional):**
+```json
+{
+  "phone": "555-1111",
+  "emergency_contact": "Juan González (555-2222)"
+}
+```
+
+#### Eliminar Paciente
+`DELETE /api/v1/patients/:id`
+- **Roles:** `Admin`, `Root`
+- **Params (Joi):** `id` (integer, requerido)
+
+---
+
+### 6. Respuestas de Error
 
 #### Error de Validación (Joi)
 `Status: 400 Bad Request`
