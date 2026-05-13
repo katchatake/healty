@@ -35,11 +35,16 @@ module.exports = function(sequelize, DataTypes) {
     expires_at: {
       type: DataTypes.DATE,
       allowNull: false
+    },
+    created_date: {
+      type: DataTypes.DATE,
+      allowNull: true,
+      defaultValue: Sequelize.Sequelize.literal('CURRENT_TIMESTAMP')
     }
   }, {
     sequelize,
     tableName: 'sessions',
-    timestamps: true,
+    timestamps: false,
     indexes: [
       {
         name: "PRIMARY",

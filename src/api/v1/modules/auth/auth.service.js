@@ -1,41 +1,41 @@
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
-const authDao = require('./auth.dao');
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcryptjs");
+const Boom = require("@hapi/boom");
+const authDao = require("./auth.dao");
 
 const login = async (email, password) => {
-    const user = await authDao.findByEmail(email);
-    if (!user) {
-        const error = new Error('Invalid email or password');
-        error.status = 401;
-        throw error;
-    }
+  const user = await authDao.findByEmail(email);
+  if (!user) {
+    throw Boom.unauthorized("Invalid email or password");
+  }
 
-    const isValid = await bcrypt.compare(password, user.password);
-    if (!isValid) {
-        const error = new Error('Invalid email or password');
-        error.status = 401;
-        throw error;
-    }
+  const isValid = await bcrypt.compare(password, user.password);
+  if (!isValid) {
+    throw Boom.unauthorized("Invalid email or password");
+  }
 
-    const payload = {
-        id: user.id,
-        email: user.email,
-        roles: user.roles.map(r => r.name)
-    };
+  const roles = await authDao.rolesByUserId(user.id);
 
-    const token = jwt.sign(payload, process.env.JWT_SECRET, {
-        expiresIn: process.env.JWT_EXPIRES_IN || '1d'
-    });
+  const payload = {
+    id: user.id,
+    email: user.email,
+    roles: roles,
+  };
 
-    // Remove password from response
-    delete user.password;
+  const token = jwt.sign(payload, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN || "1d",
+  });
 
-    return {
-        user,
-        token
-    };
+  // Remove password from response
+  const userResponse = user;
+  delete userResponse.password;
+
+  return {
+    user: userResponse,
+    token,
+  };
 };
 
 module.exports = {
-    login
+  login,
 };

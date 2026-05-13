@@ -3,7 +3,7 @@ CREATE TABLE roles (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) UNIQUE NOT NULL,
     description TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- 2. Tabla de Usuarios (Credenciales principales)
@@ -12,8 +12,8 @@ CREATE TABLE users (
     email VARCHAR(150) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
     is_active BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 -- Tabla intermedia para Roles (Muchos a Muchos)
@@ -34,7 +34,7 @@ CREATE TABLE sessions (
     ip_address VARCHAR(45),
     is_valid BOOLEAN DEFAULT TRUE,
     expires_at DATETIME NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
@@ -95,10 +95,69 @@ CREATE TABLE appointments (
     status ENUM('pending', 'confirmed', 'completed', 'cancelled') DEFAULT 'pending',
     notes TEXT,
     created_by INT NOT NULL, -- ID del User que registró la cita (puede ser Recepcionista o Paciente)
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (patient_id) REFERENCES patients(id),
     FOREIGN KEY (professional_id) REFERENCES professionals(id),
     FOREIGN KEY (service_id) REFERENCES services(id),
     FOREIGN KEY (created_by) REFERENCES users(id)
+);
+
+-- 9. Tabla de Expedientes Médicos (Medical Records)
+CREATE TABLE medical_records (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    patient_id INT NOT NULL,
+    professional_id INT NOT NULL,
+    appointment_id INT NULL,
+    record_type VARCHAR(50) NOT NULL, -- Ej: 'psicologia', 'nutricion', 'general'
+    notes TEXT,
+    data JSON, -- Estructura flexible según la especialidad médica
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (patient_id) REFERENCES patients(id),
+    FOREIGN KEY (professional_id) REFERENCES professionals(id),
+    FOREIGN KEY (appointment_id) REFERENCES appointments(id) ON DELETE SET NULL
+);
+
+-- 10. Tabla de Pagos (Payments)
+CREATE TABLE payments (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    appointment_id INT NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    payment_method ENUM('cash', 'card', 'transfer') NOT NULL,
+    status ENUM('pending', 'completed', 'failed', 'refunded') DEFAULT 'pending',
+    payment_date DATETIME,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (appointment_id) REFERENCES appointments(id)
+);
+
+-- 11. Tabla de Gastos Operativos (Expenses)
+CREATE TABLE expenses (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    professional_id INT NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    description TEXT NOT NULL,
+    category ENUM('rent', 'supplies', 'salary', 'services', 'other') DEFAULT 'other',
+    expense_date DATE NOT NULL,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (professional_id) REFERENCES professionals(id)
+);
+
+--         data  --
+INSERT INTO roles (name, description) VALUES 
+('Admin', 'Administrador total del sistema, gestiona usuarios y clínicas'),
+('Professional', 'Especialista de salud (Nutricionista, Psicólogo, etc.) que ofrece servicios'),
+('Receptionist', 'Personal de apoyo que gestiona agendas de los profesionales'),
+('Patient', 'Usuario final que busca servicios y agenda citas')
+('Root', 'Super Usuario con acceso total al sistema');
+
+INSERT INTO users (email, password, is_active) 
+VALUES ('root@system.com', '$2b$10$76S.H/mNfWd4H6H6X6X6XeO8O8O8O8O8O8O8O8O8O8O8O8O8O8O8', true);
+
+-- 3. Vinculamos el usuario con el rol Admin
+-- Asumiendo que el user_id es 1 y el role_id es 1
+INSERT INTO user_roles (user_id, role_id) 
+VALUES (
+    (SELECT id FROM users WHERE email = 'root@system.com'),
+    (SELECT id FROM roles WHERE name = 'Root')
 );
