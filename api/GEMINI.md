@@ -135,7 +135,68 @@ Se sigue un patrón modular por versiones (`api/v1/modules`) bajo la estructura 
 
 ---
 
-### 3. Respuestas de Error
+### 3. Profesionales (Professionals)
+
+#### Crear Profesional (Admin/Root)
+`POST /api/v1/professionals`
+- **Request Payload (Joi):**
+```json
+{
+  "user_id": 5,
+  "full_name": "Dr. Juan Pérez",
+  "specialty": "Nutrición",
+  "license_number": "12345678",
+  "bio": "Especialista en nutrición deportiva.",
+  "phone": "555-1234"
+}
+```
+
+#### Obtener Todos los Profesionales
+`GET /api/v1/professionals`
+- **Response Payload:**
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "user_id": 5,
+      "full_name": "Dr. Juan Pérez",
+      "specialty": "Nutrición",
+      "user": {
+        "id": 5,
+        "email": "nuevo@doctor.com",
+        "is_active": true
+      }
+    }
+  ]
+}
+```
+
+#### Obtener Profesional por ID
+`GET /api/v1/professionals/:id`
+- **Params (Joi):** `id` (integer, requerido)
+
+#### Actualizar Profesional (Parcial)
+`PATCH /api/v1/professionals/:id`
+- **Roles:** `Admin`, `Root`
+- **Params (Joi):** `id` (integer, requerido)
+- **Request Payload (Joi - Opcional):**
+```json
+{
+  "specialty": "Nutrición Clínica",
+  "phone": "555-9999"
+}
+```
+
+#### Eliminar Profesional
+`DELETE /api/v1/professionals/:id`
+- **Roles:** `Admin`, `Root`
+- **Params (Joi):** `id` (integer, requerido)
+
+---
+
+### 4. Respuestas de Error
 
 #### Error de Validación (Joi)
 `Status: 400 Bad Request`
