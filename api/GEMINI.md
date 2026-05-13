@@ -320,7 +320,67 @@ Se sigue un patrón modular por versiones (`api/v1/modules`) bajo la estructura 
 
 ---
 
-### 6. Respuestas de Error
+### 6. Citas (Appointments)
+
+#### Crear Cita
+`POST /api/v1/appointments`
+- **Roles:** `Admin`, `Root`, `Receptionist`, `Professional`, `Patient`
+- **Request Payload (Joi):**
+```json
+{
+  "patient_id": 1,
+  "professional_id": 1,
+  "service_id": 1,
+  "appointment_date": "2024-05-20T10:00:00.000Z",
+  "notes": "Primera consulta de valoración"
+}
+```
+
+#### Obtener Todas las Citas
+`GET /api/v1/appointments`
+- **Response Payload:**
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "patient_id": 1,
+      "professional_id": 1,
+      "service_id": 1,
+      "appointment_date": "2024-05-20T10:00:00.000Z",
+      "status": "pending",
+      "notes": "Primera consulta de valoración",
+      "patient": { "full_name": "María González" },
+      "professional": { "full_name": "Dr. Juan Pérez" },
+      "service": { "name": "Consulta Nutricional Inicial" }
+    }
+  ]
+}
+```
+
+#### Obtener Citas por Paciente o Médico
+- `GET /api/v1/appointments/patient/:patientId`
+- `GET /api/v1/appointments/professional/:professionalId`
+
+#### Actualizar Cita
+`PATCH /api/v1/appointments/:id`
+- **Roles:** `Admin`, `Root`, `Receptionist`, `Professional`
+- **Request Payload (Joi - Opcional):**
+```json
+{
+  "status": "confirmed",
+  "notes": "El paciente confirmó asistencia."
+}
+```
+
+#### Eliminar Cita (Borrado Físico)
+`DELETE /api/v1/appointments/:id`
+- **Roles:** `Admin`, `Root`
+
+---
+
+### 7. Respuestas de Error
 
 #### Error de Validación (Joi)
 `Status: 400 Bad Request`
