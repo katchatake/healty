@@ -196,7 +196,69 @@ Se sigue un patrón modular por versiones (`api/v1/modules`) bajo la estructura 
 
 ---
 
-### 4. Respuestas de Error
+### 4. Servicios (Services)
+
+#### Crear Servicio (Admin/Root)
+`POST /api/v1/services`
+- **Request Payload (Joi):**
+```json
+{
+  "professional_id": 1,
+  "name": "Consulta Nutricional Inicial",
+  "description": "Evaluación corporal y plan alimenticio a medida.",
+  "price": 500.00,
+  "duration_minutes": 60,
+  "is_visible": true
+}
+```
+
+#### Obtener Todos los Servicios
+`GET /api/v1/services`
+- **Response Payload:**
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "professional_id": 1,
+      "name": "Consulta Nutricional Inicial",
+      "price": "500.00",
+      "duration_minutes": 60,
+      "professional": {
+        "id": 1,
+        "full_name": "Dr. Juan Pérez",
+        "specialty": "Nutrición"
+      }
+    }
+  ]
+}
+```
+
+#### Obtener Servicios por Médico
+`GET /api/v1/services/professional/:professionalId`
+- **Params (Joi):** `professionalId` (integer, requerido)
+
+#### Actualizar Servicio (Parcial)
+`PATCH /api/v1/services/:id`
+- **Roles:** `Admin`, `Root`
+- **Params (Joi):** `id` (integer, requerido)
+- **Request Payload (Joi - Opcional):**
+```json
+{
+  "price": 600.00,
+  "is_visible": false
+}
+```
+
+#### Eliminar Servicio
+`DELETE /api/v1/services/:id`
+- **Roles:** `Admin`, `Root`
+- **Params (Joi):** `id` (integer, requerido)
+
+---
+
+### 5. Respuestas de Error
 
 #### Error de Validación (Joi)
 `Status: 400 Bad Request`
