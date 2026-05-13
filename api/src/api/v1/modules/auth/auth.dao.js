@@ -1,4 +1,4 @@
-const { models } = require("../../../../config/database");
+const { models } = require("../../../../db/database");
 
 const findByEmail = async (email) => {
   let user = await models.users.findOne({

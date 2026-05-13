@@ -1,4 +1,4 @@
-const { models } = require("../../../../config/database");
+const { models } = require("../../../../db/database");
 
 const getAll = async () => {
   let user_roles = await models.user_roles.findAll({

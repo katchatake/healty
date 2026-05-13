@@ -1,4 +1,4 @@
-const { models } = require("../../../../config/database");
+const { models } = require("../../../../db/database");
 
 const getAll = async () => {
   return await models.medical_records.findAll({
