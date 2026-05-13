@@ -7,6 +7,7 @@
     "dev": "nodemon src/server.js",
     "db:generate-models": "npx dotenv -- bash -c 'sequelize-auto -o ./src/models -d $DB_NAME -h $DB_HOST -u $DB_USER -p $DB_PORT -x $DB_PASSWORD -e $DB_DIALECT'",
     "db:migrate": "sequelize-cli db:migrate",
+    "db:seed": "sequelize-cli db:seed:all",
     "db:create-migration": "sequelize-cli migration:generate --name",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
