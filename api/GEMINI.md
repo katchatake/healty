@@ -380,7 +380,71 @@ Se sigue un patrón modular por versiones (`api/v1/modules`) bajo la estructura 
 
 ---
 
-### 7. Respuestas de Error
+### 7. Expedientes Médicos (Medical Records)
+
+#### Crear Expediente
+`POST /api/v1/medical-records`
+- **Roles Permitidos (Privacidad):** `Admin`, `Root`, `Professional`
+- **Request Payload (Joi):**
+```json
+{
+  "patient_id": 1,
+  "professional_id": 1,
+  "appointment_id": 2,
+  "record_type": "nutricion",
+  "notes": "Paciente refiere sentirse con más energía.",
+  "data": {
+    "peso_kg": 75.5,
+    "porcentaje_grasa": 18.2,
+    "medida_cintura_cm": 82
+  }
+}
+```
+
+#### Obtener Historial de un Paciente
+`GET /api/v1/medical-records/patient/:patientId`
+- **Roles Permitidos:** `Admin`, `Root`, `Professional`
+- **Response Payload:**
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "patient_id": 1,
+      "professional_id": 1,
+      "appointment_id": 2,
+      "record_type": "nutricion",
+      "notes": "Paciente refiere sentirse con más energía.",
+      "data": { "peso_kg": 75.5 },
+      "created_date": "2024-05-20T10:30:00.000Z",
+      "professional": {
+        "id": 1,
+        "full_name": "Dr. Juan Pérez",
+        "specialty": "Nutrición"
+      }
+    }
+  ]
+}
+```
+
+#### Actualizar Expediente (Parcial)
+`PATCH /api/v1/medical-records/:id`
+- **Roles Permitidos:** `Admin`, `Root`, `Professional`
+- **Request Payload (Joi - Opcional):**
+```json
+{
+  "notes": "Actualización de observaciones post-estudio clínico."
+}
+```
+
+#### Eliminar Expediente (Borrado Físico)
+`DELETE /api/v1/medical-records/:id`
+- **Roles Permitidos:** `Admin`, `Root`
+
+---
+
+### 8. Respuestas de Error
 
 #### Error de Validación (Joi)
 `Status: 400 Bad Request`
