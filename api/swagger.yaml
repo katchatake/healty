@@ -1,0 +1,611 @@
+openapi: 3.0.0
+info:
+  title: Healty API
+  description: Backend modular para la gestión integral de citas, expedientes clínicos y pagos.
+  version: 1.0.0
+servers:
+  - url: http://localhost:4000/api/v1
+    description: Servidor Local
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  responses:
+    UnauthorizedError:
+      description: Token JWT inválido o ausente.
+    ForbiddenError:
+      description: El usuario no tiene el rol necesario.
+    ValidationError:
+      description: Error de validación de Joi.
+
+paths:
+  /auth/login:
+    post:
+      summary: Iniciar Sesión
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: admin@healty.com
+                password:
+                  type: string
+                  example: password123
+      responses:
+        '200':
+          description: OK
+        '400':
+          $ref: '#/components/responses/ValidationError'
+
+  /users:
+    get:
+      summary: Obtener todos los usuarios
+      tags:
+        - Users
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Lista de usuarios
+    post:
+      summary: Crear nuevo usuario
+      tags:
+        - Users
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '201':
+          description: Usuario Creado
+
+  /users/{id}:
+    get:
+      summary: Obtener usuario por ID
+      tags:
+        - Users
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Usuario encontrado
+    patch:
+      summary: Actualizar usuario parcialmente
+      tags:
+        - Users
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                is_active:
+                  type: boolean
+      responses:
+        '200':
+          description: Usuario actualizado
+    delete:
+      summary: Eliminar usuario
+      tags:
+        - Users
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Usuario eliminado
+
+  /professionals:
+    get:
+      summary: Obtener profesionales
+      tags:
+        - Professionals
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Crear profesional
+      tags:
+        - Professionals
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: integer
+                full_name:
+                  type: string
+                specialty:
+                  type: string
+                phone:
+                  type: string
+      responses:
+        '201':
+          description: Creado
+
+  /professionals/{id}:
+    get:
+      summary: Obtener profesional por ID
+      tags:
+        - Professionals
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+    patch:
+      summary: Actualizar profesional
+      tags:
+        - Professionals
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Eliminar profesional
+      tags:
+        - Professionals
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+
+  /services:
+    get:
+      summary: Obtener servicios
+      tags:
+        - Services
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Crear servicio
+      tags:
+        - Services
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Creado
+
+  /services/{id}:
+    get:
+      summary: Obtener servicio por ID
+      tags:
+        - Services
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+    patch:
+      summary: Actualizar servicio
+      tags:
+        - Services
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Eliminar servicio
+      tags:
+        - Services
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+
+  /patients:
+    get:
+      summary: Obtener pacientes
+      tags:
+        - Patients
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Crear paciente
+      tags:
+        - Patients
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Creado
+
+  /patients/{id}:
+    get:
+      summary: Obtener paciente por ID
+      tags:
+        - Patients
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+    patch:
+      summary: Actualizar paciente
+      tags:
+        - Patients
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Eliminar paciente
+      tags:
+        - Patients
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+
+  /appointments:
+    get:
+      summary: Obtener citas
+      tags:
+        - Appointments
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Crear cita
+      tags:
+        - Appointments
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Creado
+
+  /appointments/{id}:
+    get:
+      summary: Obtener cita por ID
+      tags:
+        - Appointments
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+    patch:
+      summary: Actualizar cita
+      tags:
+        - Appointments
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Eliminar cita
+      tags:
+        - Appointments
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+
+  /medical-records:
+    get:
+      summary: Obtener expedientes médicos
+      tags:
+        - Medical Records
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Crear expediente
+      tags:
+        - Medical Records
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Creado
+
+  /medical-records/{id}:
+    get:
+      summary: Obtener expediente por ID
+      tags:
+        - Medical Records
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+    patch:
+      summary: Actualizar expediente
+      tags:
+        - Medical Records
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Eliminar expediente
+      tags:
+        - Medical Records
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+
+  /payments:
+    get:
+      summary: Obtener pagos
+      tags:
+        - Payments
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+    post:
+      summary: Crear pago
+      tags:
+        - Payments
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Creado
+
+  /payments/{id}:
+    get:
+      summary: Obtener pago por ID
+      tags:
+        - Payments
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+    patch:
+      summary: Actualizar pago
+      tags:
+        - Payments
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+    delete:
+      summary: Eliminar pago
+      tags:
+        - Payments
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK

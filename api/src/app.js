@@ -11,6 +11,14 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan('dev'));
 
+// Swagger Integration
+const swaggerUi = require('swagger-ui-express');
+const YAML = require('yamljs');
+const path = require('path');
+
+const swaggerDocument = YAML.load(path.join(__dirname, '../swagger.yaml'));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 // Routes
 app.get('/', (req, res) => {
     res.json({ message: 'Welcome to Healty API' });
