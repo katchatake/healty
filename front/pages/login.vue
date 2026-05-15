@@ -1,7 +1,12 @@
 <script setup>
 definePageMeta({
-  layout: 'auth'
+  layout: 'auth',
+  middleware: 'guest'
 })
+
+const route = useRoute()
+const authStore = useAuthStore()
+const toast = useToast()
 
 const form = reactive({
   email: '',
@@ -9,43 +14,121 @@ const form = reactive({
   remember: false
 })
 
-const onSubmit = () => {
-  console.log('Login attempt', form)
-  // Logic with pinia / axios
+const errorMessage = ref('')
+
+const onSubmit = async () => {
+  errorMessage.value = ''
+
+  try {
+    await authStore.login(form.email, form.password)
+
+    toast.add({
+      title: 'Sesión iniciada',
+      color: 'success'
+    })
+
+    await navigateTo(String(route.query.redirect || authStore.homePath))
+  } catch {
+    errorMessage.value = 'Correo o contraseña incorrectos.'
+
+    toast.add({
+      title: 'No se pudo iniciar sesión',
+      description: errorMessage.value,
+      color: 'error'
+    })
+  }
 }
 </script>
 
 <template>
   <div>
-    <div class="mb-8">
-      <h2 class="text-2xl font-bold text-gray-900">Bienvenido de nuevo</h2>
-      <p class="text-gray-600 mt-2">Ingresa a tu portal de Healty Clinic</p>
+    <div class="mb-7">
+      <p class="mb-2 text-sm font-semibold text-blue-600">
+        Acceso seguro
+      </p>
+      <h2 class="text-2xl font-bold tracking-tight text-slate-950">
+        Bienvenido de nuevo
+      </h2>
+      <p class="mt-2 text-sm leading-6 text-slate-600">
+        Ingresa con tu cuenta para continuar con la operación de la clínica.
+      </p>
     </div>
 
-    <UForm :state="form" class="space-y-6" @submit="onSubmit">
-      <UFormField label="Correo electrónico" name="email" :ui="{ label: { base: 'text-gray-700 font-medium mb-1' } }">
-        <UInput v-model="form.email" type="email" placeholder="tu@correo.com" icon="i-heroicons-envelope" size="xl" color="white" variant="outline" class="bg-white rounded-xl shadow-sm w-full" />
+    <UForm
+      :state="form"
+      class="space-y-5"
+      @submit="onSubmit"
+    >
+      <UFormField
+        label="Correo electrónico"
+        name="email"
+      >
+        <UInput
+          v-model="form.email"
+          type="email"
+          placeholder="tu@correo.com"
+          icon="i-heroicons-envelope"
+          size="xl"
+          color="white"
+          variant="outline"
+          autocomplete="email"
+          class="w-full"
+        />
       </UFormField>
 
-      <UFormField label="Contraseña" name="password" :ui="{ label: { base: 'text-gray-700 font-medium mb-1' } }">
+      <UFormField
+        label="Contraseña"
+        name="password"
+      >
         <template #label>
-          <div class="flex justify-between w-full">
-            <span class="text-gray-700 font-medium">Contraseña</span>
-            <NuxtLink to="#" class="text-sm text-blue-500 font-medium hover:text-blue-600 transition-colors">¿Olvidaste tu contraseña?</NuxtLink>
+          <div class="flex w-full items-center justify-between gap-3">
+            <span class="text-sm font-medium text-slate-700">Contraseña</span>
+            <NuxtLink
+              to="#"
+              class="text-sm font-medium text-blue-600 transition-colors hover:text-blue-700"
+            >
+              ¿Olvidaste tu contraseña?
+            </NuxtLink>
           </div>
         </template>
-        <UInput v-model="form.password" type="password" placeholder="••••••••" icon="i-heroicons-lock-closed" size="xl" color="white" variant="outline" class="bg-white rounded-xl shadow-sm w-full" />
+        <UInput
+          v-model="form.password"
+          type="password"
+          placeholder="Tu contraseña"
+          icon="i-heroicons-lock-closed"
+          size="xl"
+          color="white"
+          variant="outline"
+          autocomplete="current-password"
+          class="w-full"
+        />
       </UFormField>
 
-      <div class="flex items-center justify-between pt-2">
-        <UCheckbox v-model="form.remember" label="Mantener sesión iniciada" :ui="{ label: 'text-gray-600' }" />
+      <UAlert
+        v-if="errorMessage"
+        color="error"
+        variant="soft"
+        icon="i-heroicons-exclamation-triangle"
+        :title="errorMessage"
+      />
+
+      <div class="flex items-center justify-between">
+        <UCheckbox
+          v-model="form.remember"
+          label="Mantener sesión iniciada"
+        />
       </div>
 
-      <div class="pt-4">
-        <UButton type="submit" color="primary" block size="xl" class="font-bold tracking-wide">
-          Iniciar Sesión
-        </UButton>
-      </div>
+      <UButton
+        type="submit"
+        color="primary"
+        block
+        size="xl"
+        icon="i-heroicons-arrow-right-on-rectangle"
+        :loading="authStore.loading"
+      >
+        Iniciar sesión
+      </UButton>
     </UForm>
   </div>
 </template>

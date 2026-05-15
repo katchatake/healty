@@ -1,7 +1,13 @@
 <script setup>
 definePageMeta({
   middleware: [
-    function (to, from) {
+    function () {
+      const authStore = useAuthStore()
+
+      if (authStore.isAuthenticated) {
+        return navigateTo(authStore.homePath)
+      }
+
       return navigateTo('/login')
     }
   ]

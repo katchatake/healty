@@ -96,7 +96,7 @@ CREATE TABLE appointments (
     notes TEXT,
     created_by INT NOT NULL, -- ID del User que registró la cita (puede ser Recepcionista o Paciente)
     created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (patient_id) REFERENCES patients(id),
     FOREIGN KEY (professional_id) REFERENCES professionals(id),
     FOREIGN KEY (service_id) REFERENCES services(id),
@@ -113,7 +113,7 @@ CREATE TABLE medical_records (
     notes TEXT,
     data JSON, -- Estructura flexible según la especialidad médica
     created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (patient_id) REFERENCES patients(id),
     FOREIGN KEY (professional_id) REFERENCES professionals(id),
     FOREIGN KEY (appointment_id) REFERENCES appointments(id) ON DELETE SET NULL

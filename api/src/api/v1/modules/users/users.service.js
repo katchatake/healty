@@ -26,15 +26,27 @@ const createUser = async (userData) => {
     throw Boom.badRequest("Email already in use");
   }
 
-  const hashedPassword = await bcrypt.hash(userData.password, 10);
+  const { role_name, ...userPayload } = userData;
+  const hashedPassword = await bcrypt.hash(userPayload.password, 10);
   const user = await usersDao.create({
-    ...userData,
+    ...userPayload,
     password: hashedPassword,
   });
+
+  if (role_name) {
+    const role = await usersDao.findRoleByName(role_name);
+
+    if (!role) {
+      throw Boom.badRequest("Invalid role");
+    }
+
+    await usersDao.assignRole(user.id, role.id);
+  }
 
   logger.info(`User created successfully with ID: ${user.id}`);
   const result = user.toJSON();
   delete result.password;
+  result.role = role_name ? { name: role_name } : null;
   return result;
 };
 

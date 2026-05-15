@@ -72,6 +72,25 @@ const create = async (userData) => {
   return await models.users.create(userData);
 };
 
+const findRoleByName = async (name) => {
+  return await models.roles.findOne({
+    where: { name },
+  });
+};
+
+const assignRole = async (userId, roleId) => {
+  return await models.user_roles.findOrCreate({
+    where: {
+      user_id: userId,
+      role_id: roleId,
+    },
+    defaults: {
+      user_id: userId,
+      role_id: roleId,
+    },
+  });
+};
+
 const update = async (id, userData) => {
   const [rowsUpdated] = await models.users.update(userData, {
     where: { id },
@@ -91,6 +110,8 @@ module.exports = {
   getById,
   findByEmail,
   create,
+  findRoleByName,
+  assignRole,
   update,
   deleteById,
 };

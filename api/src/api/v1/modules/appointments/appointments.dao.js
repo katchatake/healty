@@ -2,12 +2,13 @@ const { models } = require("../../../../db/database");
 
 const getAll = async () => {
   return await models.appointments.findAll({
+    attributes: ["id", "appointment_date", "status"],
     include: [
       { model: models.patients, as: "patient" },
       { model: models.professionals, as: "professional" },
       { model: models.services, as: "service" },
     ],
-    order: [['appointment_date', 'DESC']],
+    order: [["appointment_date", "DESC"]],
   });
 };
 
@@ -28,7 +29,7 @@ const getByPatientId = async (patient_id) => {
       { model: models.professionals, as: "professional" },
       { model: models.services, as: "service" },
     ],
-    order: [['appointment_date', 'DESC']],
+    order: [["appointment_date", "DESC"]],
   });
 };
 
@@ -39,7 +40,7 @@ const getByProfessionalId = async (professional_id) => {
       { model: models.patients, as: "patient" },
       { model: models.services, as: "service" },
     ],
-    order: [['appointment_date', 'DESC']],
+    order: [["appointment_date", "DESC"]],
   });
 };
 

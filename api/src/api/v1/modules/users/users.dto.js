@@ -10,6 +10,7 @@ const createUserSchema = Joi.object({
     'any.required': 'La contraseña es obligatoria',
   }),
   is_active: Joi.boolean().default(true),
+  role_name: Joi.string().valid('Admin', 'Root', 'Professional', 'Receptionist', 'Patient'),
 });
 
 const updateUserSchema = Joi.object({
