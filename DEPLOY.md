@@ -98,6 +98,25 @@ docker compose up -d --build
 
 ---
 
+## 🗄️ Operaciones Manuales de Base de Datos (Migraciones y Semillas)
+
+Aunque el contenedor ejecuta las migraciones de forma automática durante su arranque inicial, puedes ejecutar los comandos de Sequelize de forma manual dentro del contenedor en cualquier momento:
+
+* **Ejecutar migraciones manualmente:**
+  ```bash
+  docker compose exec api npm run db:migrate
+  ```
+* **Ejecutar seeders manualmente (poblar la base de datos):**
+  ```bash
+  docker compose exec api npm run db:seed
+  ```
+* **Deshacer la última migración (si necesitas revertir cambios):**
+  ```bash
+  docker compose exec api npx sequelize-cli db:migrate:undo
+  ```
+
+---
+
 ## 🔒 Aislamiento Completo (Evitar Conflictos)
 
 Debido a que ya tienes un proyecto en producción en el mismo servidor de IONOS (que también usa NuxtJS, Node y MySQL), este esquema garantiza aislamiento mediante:
