@@ -42,7 +42,7 @@ const onSubmit = async () => {
 
 <template>
   <div>
-    <div class="mb-7">
+    <div class="mb-7 text-center">
       <p class="mb-2 text-sm font-semibold text-blue-600">
         Acceso seguro
       </p>
@@ -60,16 +60,16 @@ const onSubmit = async () => {
       @submit="onSubmit"
     >
       <UFormField
-        label="Correo electrónico"
         name="email"
       >
+        <span class="text-sm font-medium text-slate-700">Correo electrónico</span>
         <UInput
           v-model="form.email"
           type="email"
           placeholder="tu@correo.com"
           icon="i-heroicons-envelope"
           size="xl"
-          color="white"
+          color="primary"
           variant="outline"
           autocomplete="email"
           class="w-full"
@@ -97,7 +97,7 @@ const onSubmit = async () => {
           placeholder="Tu contraseña"
           icon="i-heroicons-lock-closed"
           size="xl"
-          color="white"
+          color="primary"
           variant="outline"
           autocomplete="current-password"
           class="w-full"
@@ -121,7 +121,7 @@ const onSubmit = async () => {
 
       <UButton
         type="submit"
-        color="primary"
+        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-md border-0 transition-colors"
         block
         size="xl"
         icon="i-heroicons-arrow-right-on-rectangle"

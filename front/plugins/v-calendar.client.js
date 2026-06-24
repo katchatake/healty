@@ -1,8 +1,8 @@
-import { setupCalendar, Calendar, DatePicker } from 'v-calendar';
-import 'v-calendar/style.css';
+import { setupCalendar, Calendar, DatePicker } from 'v-calendar'
+import 'v-calendar/style.css'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.use(setupCalendar, {});
-  nuxtApp.vueApp.component('VCalendar', Calendar);
-  nuxtApp.vueApp.component('DatePicker', DatePicker);
-});
+  nuxtApp.vueApp.use(setupCalendar, {})
+  nuxtApp.vueApp.component('VCalendar', Calendar)
+  nuxtApp.vueApp.component('DatePicker', DatePicker)
+})

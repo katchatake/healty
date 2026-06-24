@@ -12,6 +12,10 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  colorMode: {
+    preference: 'light'
+  },
+
   ui: {
     // We can configure custom colors here if needed
   },

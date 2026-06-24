@@ -2,7 +2,7 @@ const { models } = require("../../../../db/database");
 
 const getAll = async () => {
   return await models.appointments.findAll({
-    attributes: ["id", "appointment_date", "status"],
+    attributes: ["id", "patient_id", "professional_id", "service_id", "appointment_date", "status", "notes"],
     include: [
       { model: models.patients, as: "patient" },
       { model: models.professionals, as: "professional" },

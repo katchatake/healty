@@ -265,3 +265,754 @@
 {"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-05-15 12:51:49"}
 {"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-05-15 12:51:49"}
 {"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-05-15 12:51:49"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:27:12"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 11:27:12"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:27:12"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:27:12"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:27:18"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:27:18"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:27:20"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 11:27:20"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:27:20"}
+{"level":"error","message":"403 - Invalid or expired token - /api/v1/users - GET - ::1 - Error: Invalid or expired token\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:14:24\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:190:16\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:12:7)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)","service":"user-service","timestamp":"2026-06-19 11:27:40"}
+{"level":"error","message":"403 - Invalid or expired token - /api/v1/professionals - GET - ::1 - Error: Invalid or expired token\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:14:24\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:190:16\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:12:7)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)","service":"user-service","timestamp":"2026-06-19 11:27:40"}
+{"level":"error","message":"403 - Invalid or expired token - /api/v1/receptionists - GET - ::1 - Error: Invalid or expired token\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:14:24\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:190:16\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:12:7)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)","service":"user-service","timestamp":"2026-06-19 11:27:40"}
+{"level":"error","message":"403 - Invalid or expired token - /api/v1/patients - GET - ::1 - Error: Invalid or expired token\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:14:24\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:190:16\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:12:7)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)","service":"user-service","timestamp":"2026-06-19 11:27:40"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 11:27:49"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:27:49"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:27:49"}
+{"level":"info","message":"User created successfully with ID: 15","service":"user-service","timestamp":"2026-06-19 11:28:30"}
+{"level":"info","message":"Professional created successfully with ID: 3","service":"user-service","timestamp":"2026-06-19 11:28:30"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 11:28:30"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:28:30"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:28:30"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 11:28:37"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:28:37"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:28:37"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 11:28:39"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:28:39"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:28:39"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:28:42"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:28:42"}
+{"level":"info","message":"Service created successfully with ID: 5","service":"user-service","timestamp":"2026-06-19 11:29:14"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:29:14"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:29:14"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:29:19"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 11:29:19"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:29:19"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:29:19"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 11:31:08"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:31:08"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:31:08"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:31:08"}
+{"level":"error","message":"500 - An internal server error occurred - /api/v1/appointments - POST - ::1 - Error\n    at Query.run (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async MySQLQueryInterface.insert (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n    at async model.save (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/model.js:2490:35)\n    at async appointments.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/model.js:1362:12)\n    at async Object.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.dao.js:48:10)\n    at async Object.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.service.js:54:23)\n    at async create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.controller.js:42:18)","service":"user-service","timestamp":"2026-06-19 11:31:53"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 11:32:18"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:32:18"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:32:18"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:32:18"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:38:07"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 11:38:10"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:38:10"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:38:10"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:38:11"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:38:21"}
+{"level":"info","message":"User created successfully with ID: 16","service":"user-service","timestamp":"2026-06-19 11:38:52"}
+{"level":"info","message":"Patient created successfully with ID: 5","service":"user-service","timestamp":"2026-06-19 11:38:52"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:38:52"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:38:57"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 11:39:00"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:39:00"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:39:00"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:39:00"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 11:39:09"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:39:09"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:39:09"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:39:09"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 11:55:21"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 11:55:21"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 11:55:21"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 11:55:21"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 13:36:00"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:36:00"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:36:00"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:36:01"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:36:01"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:36:03"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:36:04"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:36:04"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:36:04"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:36:04"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:38:47"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:41:16"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:24"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:25"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:26"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:26"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:26"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:26"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:26"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:27"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:27"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:27"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:27"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:29"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:29"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:29"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:29"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:30"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:38"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:42:40"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:43:07"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:43:58"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:43:58"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:43:58"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:43:58"}
+{"level":"error","message":"500 - An internal server error occurred - /api/v1/appointments - POST - ::1 - Error\n    at Query.run (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async MySQLQueryInterface.insert (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n    at async model.save (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/model.js:2490:35)\n    at async appointments.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/model.js:1362:12)\n    at async Object.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.dao.js:48:10)\n    at async Object.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.service.js:54:23)\n    at async create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.controller.js:42:18)","service":"user-service","timestamp":"2026-06-19 13:44:23"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:44:52"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:44:52"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:44:52"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:44:52"}
+{"level":"error","message":"500 - An internal server error occurred - /api/v1/appointments - POST - ::1 - Error\n    at Query.run (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async MySQLQueryInterface.insert (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n    at async model.save (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/model.js:2490:35)\n    at async appointments.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/model.js:1362:12)\n    at async Object.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.dao.js:48:10)\n    at async Object.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.service.js:54:23)\n    at async create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.controller.js:42:18)","service":"user-service","timestamp":"2026-06-19 13:45:11"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:47:06"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:47:06"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:47:06"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:47:06"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:47:09"}
+{"level":"info","message":"Fetching patient with ID: 3","service":"user-service","timestamp":"2026-06-19 13:47:11"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:47:11"}
+{"level":"info","message":"Fetching medical records for patient ID: 3","service":"user-service","timestamp":"2026-06-19 13:47:11"}
+{"level":"error","message":"500 - An internal server error occurred - /api/v1/medical-records/patient/3 - GET - ::1 - TypeError: Cannot read properties of undefined (reading 'findAll')\n    at Object.getByPatientId (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/medical_records/medical_records.dao.js:23:39)\n    at Object.getByPatientId (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/medical_records/medical_records.service.js:24:34)\n    at getByPatientId (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/medical_records/medical_records.controller.js:23:46)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/route.js:157:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/validator.middleware.js:20:5\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/route.js:117:3)\n    at handle (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:435:11)","service":"user-service","timestamp":"2026-06-19 13:47:11"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:47:18"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:47:18"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:47:18"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:47:18"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:47:19"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:47:21"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:47:21"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:47:22"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:47:23"}
+{"level":"info","message":"Fetching medical records for patient ID: 4","service":"user-service","timestamp":"2026-06-19 13:47:23"}
+{"level":"error","message":"500 - An internal server error occurred - /api/v1/medical-records/patient/4 - GET - ::1 - TypeError: Cannot read properties of undefined (reading 'findAll')\n    at Object.getByPatientId (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/medical_records/medical_records.dao.js:23:39)\n    at Object.getByPatientId (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/medical_records/medical_records.service.js:24:34)\n    at getByPatientId (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/medical_records/medical_records.controller.js:23:46)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/route.js:157:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/validator.middleware.js:20:5\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/route.js:117:3)\n    at handle (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:435:11)","service":"user-service","timestamp":"2026-06-19 13:47:23"}
+{"level":"info","message":"Fetching patient with ID: 4","service":"user-service","timestamp":"2026-06-19 13:47:23"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:47:26"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:47:31"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:47:31"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:47:31"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:47:31"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:47:36"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:47:37"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:47:37"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:47:37"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:47:37"}
+{"level":"error","message":"500 - An internal server error occurred - /api/v1/appointments - POST - ::1 - Error\n    at Query.run (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async MySQLQueryInterface.insert (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n    at async model.save (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/model.js:2490:35)\n    at async appointments.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/sequelize/lib/model.js:1362:12)\n    at async Object.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.dao.js:48:10)\n    at async Object.create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.service.js:54:23)\n    at async create (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/appointments/appointments.controller.js:42:18)","service":"user-service","timestamp":"2026-06-19 13:47:55"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:49:03"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:49:03"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:49:03"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:49:03"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:50:36"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:50:36"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:50:36"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:50:36"}
+{"level":"info","message":"Appointment created successfully with ID: 7","service":"user-service","timestamp":"2026-06-19 13:50:52"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:50:52"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:50:52"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:50:52"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:50:52"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:50:59"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:50:59"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:50:59"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:50:59"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:51:05"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:51:44"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:51:47"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:51:47"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:51:47"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:51:47"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:52:13"}
+{"level":"info","message":"Fetching medical records for patient ID: 3","service":"user-service","timestamp":"2026-06-19 13:52:21"}
+{"level":"info","message":"Fetching patient with ID: 3","service":"user-service","timestamp":"2026-06-19 13:52:21"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:52:21"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:52:30"}
+{"level":"info","message":"Fetching patient with ID: 5","service":"user-service","timestamp":"2026-06-19 13:52:32"}
+{"level":"info","message":"Fetching medical records for patient ID: 5","service":"user-service","timestamp":"2026-06-19 13:52:32"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:52:32"}
+{"level":"info","message":"Medical record created successfully with ID: 2","service":"user-service","timestamp":"2026-06-19 13:53:05"}
+{"level":"info","message":"Fetching medical records for patient ID: 5","service":"user-service","timestamp":"2026-06-19 13:53:05"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:53:19"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:53:19"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:53:19"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:53:19"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:53:21"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:53:21"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:57:17"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:57:17"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:57:19"}
+{"level":"info","message":"Fetching patient with ID: 5","service":"user-service","timestamp":"2026-06-19 13:57:23"}
+{"level":"info","message":"Fetching medical records for patient ID: 5","service":"user-service","timestamp":"2026-06-19 13:57:23"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:57:23"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 13:57:32"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:57:32"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:57:32"}
+{"level":"info","message":"User created successfully with ID: 17","service":"user-service","timestamp":"2026-06-19 13:58:20"}
+{"level":"info","message":"Professional created successfully with ID: 4","service":"user-service","timestamp":"2026-06-19 13:58:20"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 13:58:20"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:58:20"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:58:20"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:58:31"}
+{"level":"info","message":"User created successfully with ID: 18","service":"user-service","timestamp":"2026-06-19 13:59:08"}
+{"level":"info","message":"Patient created successfully with ID: 6","service":"user-service","timestamp":"2026-06-19 13:59:08"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:59:08"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:59:11"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:59:11"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:59:11"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:59:11"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:59:11"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:59:21"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:59:21"}
+{"level":"info","message":"Service created successfully with ID: 6","service":"user-service","timestamp":"2026-06-19 13:59:45"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:59:45"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:59:45"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:59:49"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 13:59:50"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 13:59:50"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 13:59:50"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 13:59:50"}
+{"level":"info","message":"Appointment created successfully with ID: 8","service":"user-service","timestamp":"2026-06-19 14:00:05"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 14:00:05"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:00:05"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 14:00:05"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 14:00:05"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:00:21"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:00:26"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 14:00:26"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 14:00:26"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 14:00:26"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:00:28"}
+{"level":"info","message":"Fetching patient with ID: 6","service":"user-service","timestamp":"2026-06-19 14:00:30"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 14:00:30"}
+{"level":"info","message":"Fetching medical records for patient ID: 6","service":"user-service","timestamp":"2026-06-19 14:00:30"}
+{"level":"error","message":"401 - No token provided - /api/v1/patients/6 - GET - ::1 - Error: No token provided\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:9:22)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)\n    at Function.handle (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:186:3)\n    at router (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:60:12)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)","service":"user-service","timestamp":"2026-06-19 14:10:17"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 14:10:44"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 14:10:44"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:10:44"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:10:49"}
+{"level":"info","message":"Fetching patient with ID: 6","service":"user-service","timestamp":"2026-06-19 14:10:50"}
+{"level":"info","message":"Fetching medical records for patient ID: 6","service":"user-service","timestamp":"2026-06-19 14:10:50"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 14:10:50"}
+{"level":"info","message":"Medical record created successfully with ID: 3","service":"user-service","timestamp":"2026-06-19 14:11:36"}
+{"level":"info","message":"Fetching medical records for patient ID: 6","service":"user-service","timestamp":"2026-06-19 14:11:36"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:12:17"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:12:19"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:12:23"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 14:12:23"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 14:12:23"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 14:12:23"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:12:27"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:12:28"}
+{"level":"info","message":"Fetching patient with ID: 3","service":"user-service","timestamp":"2026-06-19 14:12:30"}
+{"level":"info","message":"Fetching medical records for patient ID: 3","service":"user-service","timestamp":"2026-06-19 14:12:30"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 14:12:30"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 14:12:30"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 14:12:32"}
+{"level":"info","message":"Fetching patient with ID: 6","service":"user-service","timestamp":"2026-06-19 14:12:32"}
+{"level":"info","message":"Fetching medical records for patient ID: 6","service":"user-service","timestamp":"2026-06-19 14:12:32"}
+{"level":"info","message":"Fetching patient with ID: 6","service":"user-service","timestamp":"2026-06-19 15:12:58"}
+{"level":"info","message":"Fetching medical records for patient ID: 6","service":"user-service","timestamp":"2026-06-19 15:12:58"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:12:58"}
+{"level":"info","message":"Fetching patient with ID: 6","service":"user-service","timestamp":"2026-06-19 15:37:33"}
+{"level":"info","message":"Fetching medical records for patient ID: 6","service":"user-service","timestamp":"2026-06-19 15:37:33"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:37:33"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:37:40"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:37:40"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:37:40"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:37:40"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:37:44"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:37:57"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:39:10"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:40:54"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:41:24"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 15:41:24"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:41:24"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:41:26"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:41:26"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:41:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:41:29"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:41:29"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:41:29"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:41:29"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:41:30"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:41:31"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:41:31"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:41:34"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:41:34"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:41:34"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:41:34"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:41:37"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:44:29"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:44:29"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:44:29"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:44:29"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:44:49"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:44:59"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 15:44:59"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:44:59"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:45:01"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:45:01"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:45:02"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:45:03"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:45:03"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:45:03"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:45:03"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:45:04"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:46:36"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:46:36"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:46:37"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:46:38"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:46:38"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:46:38"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:46:38"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:46:41"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:49:01"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:49:01"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:49:01"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:50:23"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:50:23"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:50:23"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:50:34"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:50:34"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:50:34"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:50:34"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:02"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:03"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:03"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:03"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:51:03"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:04"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:04"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:04"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:16"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:16"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:51:16"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:16"}
+{"level":"info","message":"Appointment created successfully with ID: 9","service":"user-service","timestamp":"2026-06-19 15:51:28"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:28"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:28"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:51:28"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:31"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:31"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:31"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:35"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:35"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:35"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:40"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:40"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:40"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:42"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:42"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:42"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:45"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:48"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:48"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:48"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:51:48"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:51:48"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:51:48"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:51:48"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:52:03"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:52:03"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:52:03"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:52:08"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:52:08"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:52:08"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:52:08"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:52:11"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:52:12"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:52:12"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:52:12"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:52:12"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:52:13"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:52:13"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 15:52:13"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 15:52:46"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:52:46"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:13"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:13"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:13"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:53:13"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:19"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:19"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:19"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:23"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:23"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:53:23"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:23"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:23"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:23"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:23"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:29"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:29"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:29"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:29"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:29"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:53:29"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:29"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:32"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:32"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 15:53:32"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:33"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:33"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:33"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 15:53:33"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:36"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:36"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:36"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:53:40"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:40"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:53:40"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:53:54"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 15:53:54"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 15:54:24"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:54:24"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:54:24"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 15:55:17"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:55:17"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:55:17"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:55:42"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 15:55:42"}
+{"level":"error","message":"401 - Invalid email or password - /api/v1/auth/login - POST - ::1 - Error: Invalid email or password\n    at Object.login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.service.js:14:16)\n    at async login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.controller.js:6:20)","service":"user-service","timestamp":"2026-06-19 15:56:13"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:56:18"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:56:18"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:56:18"}
+{"level":"error","message":"401 - Invalid email or password - /api/v1/auth/login - POST - ::1 - Error: Invalid email or password\n    at Object.login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.service.js:14:16)\n    at async login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.controller.js:6:20)","service":"user-service","timestamp":"2026-06-19 15:56:35"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:56:40"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:56:40"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:56:40"}
+{"level":"error","message":"401 - Invalid email or password - /api/v1/auth/login - POST - ::1 - Error: Invalid email or password\n    at Object.login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.service.js:14:16)\n    at async login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.controller.js:6:20)","service":"user-service","timestamp":"2026-06-19 15:56:55"}
+{"level":"error","message":"401 - Invalid email or password - /api/v1/auth/login - POST - ::1 - Error: Invalid email or password\n    at Object.login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.service.js:14:16)\n    at async login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.controller.js:6:20)","service":"user-service","timestamp":"2026-06-19 15:57:00"}
+{"level":"error","message":"401 - Invalid email or password - /api/v1/auth/login - POST - ::1 - Error: Invalid email or password\n    at Object.login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.service.js:14:16)\n    at async login (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/api/v1/modules/auth/auth.controller.js:6:20)","service":"user-service","timestamp":"2026-06-19 15:57:08"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:57:15"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 15:57:15"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 15:59:38"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 15:59:38"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 15:59:38"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:00:14"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:00:14"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:00:14"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:00:14"}
+{"level":"info","message":"Appointment created successfully with ID: 10","service":"user-service","timestamp":"2026-06-19 16:00:36"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:00:36"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:00:36"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:00:36"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:00:36"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:00:42"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:00:42"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:00:42"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:00:44"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:00:44"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:00:44"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:00:55"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:00:55"}
+{"level":"error","message":"401 - No token provided - /api/v1/appointments - GET - ::1 - Error: No token provided\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:9:22)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)\n    at Function.handle (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:186:3)\n    at router (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:60:12)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)","service":"user-service","timestamp":"2026-06-19 16:03:47"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:04:18"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:04:32"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:04:32"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:08:08"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:08:08"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:08:22"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:08:22"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:08:22"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:08:25"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:08:25"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:08:25"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:08:25"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:08:31"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:08:31"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:08:36"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:08:37"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:08:37"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:08:37"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:08:37"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:08:37"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:08:52"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:08:52"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:08:52"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:08:54"}
+{"level":"info","message":"Fetching appointments for patient ID: 3","service":"user-service","timestamp":"2026-06-19 16:08:54"}
+{"level":"info","message":"Fetching patient with ID: 3","service":"user-service","timestamp":"2026-06-19 16:08:54"}
+{"level":"error","message":"403 - Insufficient permissions - /api/v1/medical-records/patient/3 - GET - ::1 - Error: Insufficient permissions\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:31:24\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:17:5\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:261:12\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)","service":"user-service","timestamp":"2026-06-19 16:08:54"}
+{"level":"error","message":"403 - Insufficient permissions - /api/v1/medical-records/patient/3 - GET - ::1 - Error: Insufficient permissions\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:31:24\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:17:5\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:261:12\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)","service":"user-service","timestamp":"2026-06-19 16:09:07"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:09:07"}
+{"level":"info","message":"Fetching patient with ID: 3","service":"user-service","timestamp":"2026-06-19 16:09:07"}
+{"level":"info","message":"Fetching appointments for patient ID: 3","service":"user-service","timestamp":"2026-06-19 16:09:07"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 16:09:28"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:09:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:09:28"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:09:39"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:09:39"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:09:42"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:09:42"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:09:42"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:09:42"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:09:43"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:09:43"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:09:43"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:09:46"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:09:46"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:09:46"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:09:46"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:09:47"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:09:47"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:09:54"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:09:54"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:09:54"}
+{"level":"error","message":"403 - Insufficient permissions - /api/v1/medical-records/patient/3 - GET - ::1 - Error: Insufficient permissions\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:31:24\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:17:5\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:261:12\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)","service":"user-service","timestamp":"2026-06-19 16:09:55"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:09:55"}
+{"level":"info","message":"Fetching patient with ID: 3","service":"user-service","timestamp":"2026-06-19 16:09:55"}
+{"level":"info","message":"Fetching appointments for patient ID: 3","service":"user-service","timestamp":"2026-06-19 16:09:55"}
+{"level":"info","message":"Fetching medical records for patient ID: 3","service":"user-service","timestamp":"2026-06-19 16:14:40"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:16:23"}
+{"level":"info","message":"Fetching patient with ID: 3","service":"user-service","timestamp":"2026-06-19 16:16:23"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:16:28"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:16:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:16:31"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:16:31"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:16:31"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:16:31"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:16:32"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:16:32"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:16:32"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:16:33"}
+{"level":"info","message":"Fetching patient with ID: 3","service":"user-service","timestamp":"2026-06-19 16:16:33"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:16:36"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:16:36"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:16:54"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:16:54"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:16:54"}
+{"level":"info","message":"Fetching appointments for patient ID: 6","service":"user-service","timestamp":"2026-06-19 16:17:01"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:17:01"}
+{"level":"info","message":"Fetching patient with ID: 6","service":"user-service","timestamp":"2026-06-19 16:17:01"}
+{"level":"info","message":"Fetching medical records for patient ID: 6","service":"user-service","timestamp":"2026-06-19 16:17:01"}
+{"level":"info","message":"Medical record created successfully with ID: 4","service":"user-service","timestamp":"2026-06-19 16:17:13"}
+{"level":"info","message":"Appointment updated with ID: 8","service":"user-service","timestamp":"2026-06-19 16:17:13"}
+{"level":"info","message":"Fetching appointments for patient ID: 6","service":"user-service","timestamp":"2026-06-19 16:17:13"}
+{"level":"info","message":"Fetching medical records for patient ID: 6","service":"user-service","timestamp":"2026-06-19 16:17:13"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:17:35"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:17:35"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:17:35"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:17:35"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:17:43"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:17:43"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:17:43"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:21:05"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:21:05"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:21:05"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:21:08"}
+{"level":"info","message":"Fetching patient with ID: 5","service":"user-service","timestamp":"2026-06-19 16:21:08"}
+{"level":"info","message":"Fetching medical records for patient ID: 5","service":"user-service","timestamp":"2026-06-19 16:21:08"}
+{"level":"info","message":"Fetching appointments for patient ID: 5","service":"user-service","timestamp":"2026-06-19 16:21:08"}
+{"level":"info","message":"Medical record created successfully with ID: 5","service":"user-service","timestamp":"2026-06-19 16:22:56"}
+{"level":"info","message":"Appointment updated with ID: 10","service":"user-service","timestamp":"2026-06-19 16:22:56"}
+{"level":"info","message":"Fetching appointments for patient ID: 5","service":"user-service","timestamp":"2026-06-19 16:22:56"}
+{"level":"info","message":"Fetching medical records for patient ID: 5","service":"user-service","timestamp":"2026-06-19 16:22:56"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:23:03"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:23:03"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:23:03"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:23:03"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:23:06"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:23:06"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:23:06"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:26:55"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:26:55"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:26:55"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:26:59"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:26:59"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:26:59"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:27:01"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:27:01"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:27:01"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:27:02"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:27:02"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:27:02"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:27:04"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:27:04"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:27:04"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:27:05"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:27:05"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:27:05"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:27:06"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:27:06"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:27:06"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:27:06"}
+{"level":"info","message":"Appointment created successfully with ID: 11","service":"user-service","timestamp":"2026-06-19 16:27:24"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:27:24"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:27:24"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:27:24"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:27:24"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:27:26"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:27:26"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:27:26"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:27:40"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:27:40"}
+{"level":"info","message":"Payment created successfully with ID: 2","service":"user-service","timestamp":"2026-06-19 16:28:01"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:28:01"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:28:01"}
+{"level":"info","message":"Payment created successfully with ID: 3","service":"user-service","timestamp":"2026-06-19 16:28:04"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:28:04"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:28:04"}
+{"level":"info","message":"Appointment updated with ID: 9","service":"user-service","timestamp":"2026-06-19 16:28:12"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:28:12"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:28:12"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:28:40"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:28:40"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:28:40"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:28:40"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:28:47"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:28:47"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:28:51"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:28:51"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:28:51"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:28:51"}
+{"level":"info","message":"Appointment created successfully with ID: 12","service":"user-service","timestamp":"2026-06-19 16:29:04"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:29:04"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:29:04"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:29:04"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:29:04"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:29:09"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:29:09"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:29:23"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:29:23"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:29:23"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:29:45"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:29:45"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:29:45"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:29:47"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:29:47"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:29:47"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 16:30:02"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:30:02"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:30:02"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:30:08"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-19 16:30:08"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:30:09"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:30:09"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:30:09"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:30:09"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:30:11"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:30:11"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 16:30:11"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 16:30:13"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:30:13"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 16:30:13"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 16:30:13"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 16:30:13"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 17:21:12"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 17:21:12"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 17:21:12"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 17:48:00"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 17:48:00"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 17:48:00"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 18:04:13"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 18:04:13"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 18:04:13"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 18:36:50"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 18:36:50"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 18:36:50"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 18:50:50"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 18:50:50"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 18:50:50"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 18:55:07"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 18:55:07"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 18:55:07"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 20:54:28"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 20:54:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 20:54:28"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 21:26:28"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 21:26:28"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 21:26:36"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 21:26:36"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 21:26:36"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 21:26:37"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 21:26:37"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 21:26:37"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 21:26:37"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-19 21:41:01"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 21:41:01"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 21:41:01"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-19 21:41:01"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 21:49:12"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 21:49:12"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 21:49:12"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 21:49:15"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 21:49:15"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 21:49:15"}
+{"level":"info","message":"Fetching all users","service":"user-service","timestamp":"2026-06-19 22:07:05"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-19 22:07:05"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-19 22:07:05"}
+{"level":"error","message":"403 - Invalid or expired token - /api/v1/users - GET - ::1 - Error: Invalid or expired token\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:14:24\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:190:16\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:12:7)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)","service":"user-service","timestamp":"2026-06-24 12:07:01"}
+{"level":"error","message":"403 - Invalid or expired token - /api/v1/professionals - GET - ::1 - Error: Invalid or expired token\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:14:24\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:190:16\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:12:7)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)","service":"user-service","timestamp":"2026-06-24 12:07:01"}
+{"level":"error","message":"403 - Invalid or expired token - /api/v1/receptionists - GET - ::1 - Error: Invalid or expired token\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:14:24\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:190:16\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:12:7)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)","service":"user-service","timestamp":"2026-06-24 12:07:01"}
+{"level":"error","message":"403 - Invalid or expired token - /api/v1/patients - GET - ::1 - Error: Invalid or expired token\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:14:24\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:190:16\n    at getSecret (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:97:14)\n    at module.exports [as verify] (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/jsonwebtoken/verify.js:101:10)\n    at verifyToken (/Users/franciscojaviersantiagomunoz/projects/healty/api/src/middleware/auth.middleware.js:12:7)\n    at Layer.handleRequest (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/lib/layer.js:152:17)\n    at trimPrefix (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:342:13)\n    at /Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:297:9\n    at processParams (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:582:12)\n    at next (/Users/franciscojaviersantiagomunoz/projects/healty/api/node_modules/router/index.js:291:5)","service":"user-service","timestamp":"2026-06-24 12:07:01"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:24:41"}
+{"level":"info","message":"Fetching all payments","service":"user-service","timestamp":"2026-06-24 13:24:41"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:24:43"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:24:43"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:24:43"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:24:43"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:24:46"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:24:46"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:24:46"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:24:57"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:24:57"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:24:57"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:24:57"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:27:59"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:27:59"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:27:59"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:28:03"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:28:03"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:28:03"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:28:03"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:30:02"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:30:02"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:30:02"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:30:02"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:34:44"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:34:44"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:34:44"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:34:44"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:35:38"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:35:38"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:35:38"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:35:38"}
+{"level":"info","message":"Appointment created successfully with ID: 13","service":"user-service","timestamp":"2026-06-24 13:35:53"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:35:53"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:35:53"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:35:53"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:35:53"}
+{"level":"info","message":"Appointment created successfully with ID: 14","service":"user-service","timestamp":"2026-06-24 13:36:12"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:36:12"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:36:12"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:36:12"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:36:12"}
+{"level":"info","message":"Appointment created successfully with ID: 15","service":"user-service","timestamp":"2026-06-24 13:36:33"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:36:33"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:36:33"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:36:33"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:36:33"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:36:49"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:36:49"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:36:49"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:42:22"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:42:22"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:42:22"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:42:22"}
+{"level":"info","message":"Appointment updated with ID: 14","service":"user-service","timestamp":"2026-06-24 13:42:36"}
+{"level":"info","message":"Fetching all appointments","service":"user-service","timestamp":"2026-06-24 13:42:36"}
+{"level":"info","message":"Fetching all patients","service":"user-service","timestamp":"2026-06-24 13:42:36"}
+{"level":"info","message":"Fetching all professionals","service":"user-service","timestamp":"2026-06-24 13:42:36"}
+{"level":"info","message":"Fetching all services","service":"user-service","timestamp":"2026-06-24 13:42:36"}

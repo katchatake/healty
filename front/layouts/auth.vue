@@ -1,10 +1,13 @@
 <template>
-  <div class="min-h-screen bg-slate-100 text-slate-900">
+  <div class="min-h-screen bg-blue-50 text-slate-900">
     <div class="grid min-h-screen lg:grid-cols-[1.05fr_0.95fr]">
       <section class="hidden bg-slate-950 px-10 py-8 text-white lg:flex lg:flex-col">
         <div class="flex items-center gap-3">
           <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-500">
-            <UIcon name="i-heroicons-heart" class="h-6 w-6" />
+            <UIcon
+              name="i-heroicons-heart"
+              class="h-6 w-6"
+            />
           </div>
           <div>
             <p class="text-lg font-bold leading-5">
@@ -62,7 +65,10 @@
         <div class="w-full max-w-md">
           <div class="mb-8 flex items-center gap-3 lg:hidden">
             <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-600 text-white">
-              <UIcon name="i-heroicons-heart" class="h-6 w-6" />
+              <UIcon
+                name="i-heroicons-heart"
+                class="h-6 w-6"
+              />
             </div>
             <div>
               <p class="text-lg font-bold leading-5 text-slate-950">
@@ -74,7 +80,7 @@
             </div>
           </div>
 
-          <div class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <div class="rounded-lg border border-slate-100 bg-white p-6 shadow-lg sm:p-8">
             <slot />
           </div>
         </div>
