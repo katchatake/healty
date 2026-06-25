@@ -3,6 +3,10 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+# Disable Nuxt Telemetry and limit memory usage to prevent VPS compilation crash
+ENV NUXT_TELEMETRY_DISABLED=1
+ENV NODE_OPTIONS="--max-old-space-size=1024"
+
 COPY package*.json ./
 RUN npm ci
 
